@@ -1,0 +1,18 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Secrets and local config
+.env
+.env.*
+
+# Node (for the React app later)
+node_modules/
+dist/
+
+# OS / editor
+Thumbs.db
+.idea/
