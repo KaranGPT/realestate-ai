@@ -7,6 +7,7 @@ class Settings(BaseSettings):
     app_name: str = "RealEstate AI API"
     environment: str = "local"
     debug: bool = False
+    database_url: str = "postgresql+asyncpg://reai:reai_dev_password@localhost:5432/reai"
 
     model_config = SettingsConfigDict(env_file=".env", env_prefix="REAI_")
 
