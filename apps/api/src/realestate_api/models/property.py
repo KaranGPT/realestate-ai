@@ -14,6 +14,4 @@ class Property(Base):
     title: Mapped[str] = mapped_column(String(200))
     city: Mapped[str] = mapped_column(String(100), index=True)
     price: Mapped[Decimal] = mapped_column(Numeric(14, 2))
-    created_at: Mapped[datetime] = mapped_column(
-        DateTime(timezone=True), server_default=func.now()
-    )
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())

@@ -14,5 +14,6 @@ async def get_db() -> AsyncIterator[AsyncSession]:
     async with SessionLocal() as session:
         yield session
 
+
 class Base(DeclarativeBase):
     pass
